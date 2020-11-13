@@ -1,0 +1,21 @@
+.bg {
+    /* The image used */
+    background-image: url(../images/photo-1524168272322-bf73616d9cb5.jpeg);
+  
+    /* Full height */
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Transparency level */
+table {
+    opacity: 85%;
+}
+
+#citydisplay {
+  color: rgb(67, 106, 235);
+}

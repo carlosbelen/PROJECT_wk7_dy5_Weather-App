@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>Weather</title>
+</head>
+<body class="bg">
+    <div>
+        <!-- Input Form -->
+        <div class="container content-justify-center">
+            <h4 style="color: blue">National Weather App</h4>
+            <form class="form-inline" name="inputForm" id="inputForm">
+                <div class="form-group mb-2">
+                    <label for="city" class="sr-only">City</label>
+                    <input type="text" name="season" class="form-control" placeholder="City" id="city">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="zip_code" class="sr-only">Zip Code</label>
+                    <input type="text" name="zip_code" class="form-control" placeholder="Zip Code" id="zip_code">
+                </div>
+                <button type="button" class="btn btn-primary mb-2" onclick="getWeather()">Submit</button>
+            </form>
+
+        <!-- Dispaly of City Name -->
+            <div id="citydisplay"> 
+            </div>
+        </div>        
+   
+
+        <!-- Results Table -->
+        <table class="container table table-hover table-dark">
+            <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Current</th>
+                <th scope="col">Feels Like</th>
+                <th scope="col">High</th>
+                <th scope="col">Low</th>
+                <th scope="col">Forecast</th>
+                <th scope="col">Humidity</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="tr1">
+                <th scope="row">Today</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+<script src="js/main.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
