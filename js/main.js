@@ -1,7 +1,7 @@
 function getWeather() {
     let city = document.querySelector('#city').value;
     let zip_code = document.querySelector('#zip_code').value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},zip=${zip_code},us&appid=362de25d9b1b31dae378cb1bbc11babc`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&zip=${zip_code}&appid=362de25d9b1b31dae378cb1bbc11babc`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
@@ -9,7 +9,7 @@ function getWeather() {
      
 // City Name
     let city_display = document.getElementById('citydisplay')
-    city_display.innerHTML = city
+    city_display.innerHTML = data.name
 
 
 // Current Temp
