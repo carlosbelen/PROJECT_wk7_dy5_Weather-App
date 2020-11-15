@@ -9,7 +9,7 @@ function getWeather() {
      
 // City Name
     let city_display = document.getElementById('citydisplay')
-    city_display.innerHTML = data.name
+    city_display.innerHTML = city
 
 
 // Current Temp
